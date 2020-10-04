@@ -1,0 +1,199 @@
+@font-face {
+  font-family: roboto;
+  src: url(./assets/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(./assets/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(./assets/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(./assets/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  color: #ffffff;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.top {
+  background-image: url('./assets/umbrellas-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 508px;
+  width: 100vw;
+}
+
+.transparency {
+  height: 508px;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 10%;
+  padding-top: 105px;
+  padding-bottom: 32px;
+}
+
+.link{
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.icon1 {
+  width: 15px;
+  height: 15px;
+  padding-top: 2px;
+}
+
+.icon2 {
+  width: 17px;
+  height: 18px;
+  padding-top: 6px;
+}
+
+.icon3 {
+  width: 19px;
+  height: 19px;
+  padding-top: 3px;
+}
+
+.top-text {
+  margin: 0 10%;
+}
+
+.name {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  width: 206px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.name-name {
+  font-weight: bold;
+}
+
+.title {
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.profile-mobile {
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  position: absolute;
+  top: 359px;
+  right: 10%;
+}
+
+.profile-desktop {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+  .top {
+    background-image: url('./assets/umbrellas-desktop.jpg');
+    height: 656px;
+  }
+
+  .transparency {
+    height: 656px;
+  }
+
+  .links {
+    margin: 0 20%;
+    padding-top: 108px;
+    padding-bottom: 51px;
+  }
+
+  .link{
+    width: 74px;
+    height: 74px;
+    margin-left: 11px;
+  }
+
+  .icon1 {
+    width: 31px;
+    height: 30px;
+    padding-top: 4px;
+  }
+  
+  .icon2 {
+    width: 35px;
+    height: 38px;
+    padding-top: 12px;
+  }
+  
+  .icon3 {
+    width: 39px;
+    height: 39px;
+    padding-top: 6px;
+  }
+  
+  .top-text {
+    margin: 0 20%;
+  }
+  
+  .name {
+    font-size: 28px;
+    width: 456px;
+    margin-bottom: 5px;
+  }
+  
+  .title {
+    font-size: 82px;
+  }
+  
+  .sub-title {
+    font-size: 50px;
+    margin-top: 9px;
+  }
+
+  .profile-mobile {
+    display: none;
+  }
+
+  .profile-desktop {
+    display: inherit;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 355px;
+    right: 20%;
+  }
+}
