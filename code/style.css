@@ -143,13 +143,38 @@ p {
 
 .summary, .featured-projects, .other-projects, .skills {
   background-color: #F2EAE4;
-  padding: 58px 10%;
+  /* padding: 58px 10%; */
+  padding: 0 10%;
 }
 
-.tech, .featured-projects, .other-projects, .thoughts, .skills, .more {
-  padding: 58px 10%;
+.tech, .featured-projects, .other-projects, .thoughts, .more-thoughts .skills, .more {
+  /* padding: 58px 10%; */
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
+}
+
+.summary-text {
+  padding: 58px 0;
+}
+
+.summary-line {
+  width: 60px;
+  height: 4px;
+  border-radius: 10px;
+  background: #A63889;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.summary-dot {
+  width: 12px;
+  height: 12px;
+  background: #A63889;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -5px;
+  margin-right: 5px;
 }
 
 .section-title {
@@ -160,7 +185,7 @@ p {
   font-weight: bold;
   width: fit-content;
   align-self: center;
-  margin-bottom: 36px;
+  margin: 58px 0 36px 0;
 }
 
 .section-subtitle {
@@ -171,14 +196,15 @@ p {
   font-weight: bold;
   width: fit-content;
   align-self: center;
-  margin-bottom: 36px;
+  margin-bottom: 18px;
 }
 
 .section-text {
   text-align: center;
+  margin-bottom: 58px;
 }
 
-.project-link {
+.project-link, .thought-link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -207,6 +233,38 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.project-description {
+  margin: 25px 0 15px 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.project-name {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #A63889;
+}
+
+.project-arrows {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #A63889;
+  /* text-decoration: underline; */
+}
+
+.project-tags {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.project-tag {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  line-height: 10px;
+  background: #F2A0AF;
+  padding: 3px 8px;
+  margin-right: 3px;
 }
 
 /* MEDIA QUERIES FOR TABLET */
