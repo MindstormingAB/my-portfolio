@@ -39,6 +39,15 @@ p {
   color: #25282c;
 }
 
+.skills p {
+  margin: 0;
+  font-weight: normal;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  color: #25282c;
+}
+
 .top {
   background-image: url('./assets/umbrellas-mobile.jpg');
   background-size: cover;
@@ -147,7 +156,7 @@ p {
   padding: 0 10%;
 }
 
-.tech, .featured-projects, .other-projects, .thoughts, .more-thoughts .skills, .more {
+.tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
   /* padding: 58px 10%; */
   padding: 0 10%;
   display: flex;
@@ -197,6 +206,20 @@ p {
   width: fit-content;
   align-self: center;
   margin-bottom: 18px;
+  margin-top: 42px;
+}
+
+.section-subtitle-bold {
+  color: #A63889;
+  /* padding: 3px 10px; */
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: bold;
+  /* width: fit-content; */
+  /* align-self: center; */
+  /* margin-bottom: 18px; */
+  /* margin-top: 42px; */
 }
 
 .section-text {
@@ -213,7 +236,7 @@ p {
 .project-icon {
   align-self: center;
   background-image: url('./assets/project-image.png');
-  height: 177px;
+  height: 179px;
   width: 303px;
   position: relative;
   text-align: center;
@@ -221,7 +244,7 @@ p {
 
 .project-transparency {
   background-color: rgba(0,0,0,0.3);
-  height: 177px;
+  height: 179px;
   width: 303px;
 }
 
@@ -235,7 +258,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.project-description {
+.project-description, .thought-description {
   margin: 25px 0 15px 0;
   font-family: roboto, Arial, Helvetica, sans-serif;
 }
@@ -250,7 +273,7 @@ p {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #A63889;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 .project-tags {
@@ -262,9 +285,138 @@ p {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-size: 9px;
   line-height: 10px;
-  background: #F2A0AF;
+  background: #F4a7af;
   padding: 3px 8px;
   margin-right: 3px;
+}
+
+.thought-icon {
+  align-self: center;
+  background-image: url('./assets/thought-image.png');
+  height: 205px;
+  width: 301px;
+  position: relative;
+  text-align: center;
+}
+
+.thought-title {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.thought-date {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  color: #A63889;
+  font-weight: normal;
+}
+
+.thought-resume {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.more-thought-description {
+  margin: 15px 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.more-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 70px;
+}
+
+.more-link {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid #A63889;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-icon1 {
+  width: 18px;
+  height: 18px;
+  padding-top: 2px;
+}
+
+.more-icon2 {
+  width: 22px;
+  height: 21px;
+  padding-top: 6px;
+}
+
+.more-icon3 {
+  width: 22px;
+  height: 22px;
+  padding-top: 3px;
+}
+
+.more-name {
+  font-size: 11px;
+  font-weight: bold;
+  color: #A63889;
+}
+
+footer {
+  background: #455473;
+  padding: 63px 0;
+}
+
+.footer-title {
+  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-text-bold {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-text {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-attribution {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* MEDIA QUERIES FOR TABLET */
