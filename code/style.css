@@ -40,15 +40,6 @@ p {
   color: #25282c;
 }
 
-.skills p {
-  margin: 0;
-  font-weight: normal;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 29px;
-  color: #25282c;
-}
-
 .top {
   background-image: url('./assets/umbrellas-mobile.jpg');
   background-size: cover;
@@ -153,19 +144,18 @@ p {
   display: none;
 }
 
-.summary, .featured-projects, .other-projects, .skills {
-  background-color: #F2EAE4;
-  padding: 0 10%;
-}
-
-.tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
+.summary, .tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
   padding: 0 10%;
   display: flex;
   flex-direction: column;
 }
 
+.summary, .featured-projects, .other-projects, .skills {
+  background-color: #F2EAE4;
+}
+
 .other-projects, .more-thoughts, .skills {
-  padding: 0 10% 75px 10%;
+  padding-bottom: 75px;
 }
 
 .summary-text {
@@ -202,29 +192,19 @@ p {
   margin: 58px 0 36px 0;
 }
 
-.section-subtitle {
-  color: #A63889;
+.section-title-mobile {
+  background: #A63889;
   padding: 3px 10px;
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: bold;
   width: fit-content;
   align-self: center;
-  margin-bottom: 18px;
-  margin-top: 42px;
+  margin: 58px 0 36px 0;
 }
 
-.section-subtitle-bold {
-  color: #A63889;
-  /* padding: 3px 10px; */
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 29px;
-  font-weight: bold;
-  /* width: fit-content; */
-  /* align-self: center; */
-  /* margin-bottom: 18px; */
-  /* margin-top: 42px; */
+.section-title-dashboard {
+  display: none;
 }
 
 .section-text {
@@ -232,25 +212,39 @@ p {
   margin-bottom: 58px;
 }
 
-.project-link, .thought-link {
+.projects-container, .other-projects, .thoughts-container, .more-thoughts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-link, .other-project-link, .thought-link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  max-width: 303px;
 }
 
 .project-icon {
   align-self: center;
-  background-image: url('./assets/project-image.png');
+  background-size: cover;
   height: 179px;
   width: 303px;
   position: relative;
-  text-align: center;
+}
+
+.-proj1 {
+  background-image: url('./assets/project-image-303.png');
+}
+
+.-proj2 {
+  background-image: url('./assets/project-image-303.png');
 }
 
 .project-transparency {
   background-color: rgba(0,0,0,0.3);
-  height: 179px;
-  width: 303px;
+  height: 100%;
+  width: 100%;
 }
 
 .project-title {
@@ -283,7 +277,7 @@ p {
 
 .project-tags {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 42px;
 }
 
 .project-tag {
@@ -295,13 +289,30 @@ p {
   margin-right: 3px;
 }
 
+.section-subtitle {
+  color: #A63889;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  width: fit-content;
+  align-self: center;
+  margin-bottom: 18px;
+  margin-top: 42px;
+}
+
 .thought-icon {
   align-self: center;
-  background-image: url('./assets/thought-image.png');
+  background-size: cover;
   height: 205px;
   width: 301px;
-  position: relative;
-  text-align: center;
+}
+
+.-th1 {
+  background-image: url('./assets/thought-image-1-303.png');
+}
+
+.-th2 {
+  background-image: url('./assets/thought-image-2-303.png');
 }
 
 .thought-title {
@@ -334,12 +345,20 @@ p {
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
 }
 
 .skill {
   text-align: center;
   padding: 15px 0;
+}
+
+.section-subtitle-bold {
+  color: #A63889;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: bold;
 }
 
 .-code {
@@ -360,6 +379,15 @@ p {
 .-more {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
+
+.skills p {
+  margin: 0;
+  font-weight: normal;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  color: #25282c;
 }
 
 .more-links {
@@ -402,6 +430,7 @@ p {
   font-size: 11px;
   font-weight: bold;
   color: #A63889;
+  margin-top: 14px;
 }
 
 footer {
@@ -448,6 +477,11 @@ footer {
 /* MEDIA QUERIES FOR TABLET */
 
 @media (min-width: 900px) {
+  p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
   .top {
     background-image: url('./assets/umbrellas-tablet.jpg');
     height: 582px;
@@ -474,32 +508,32 @@ footer {
     height: 22px;
     padding-top: 3px;
   }
-  
+
   .icon2 {
     width: 27px;
     height: 28px;
     padding-top: 9px;
   }
-  
+
   .icon3 {
     width: 30px;
     height: 30px;
     padding-top: 4px;
   }
-  
+
   .top-text {
     margin: 0 15%;
   }
-  
+
   .name {
     width: 331px;
     margin-bottom: 5px;
   }
-  
+
   .name-portfolio {
     font-size: 21px;
   }
-  
+
   .name-name {
     font-size: 21px;
   }
@@ -507,7 +541,7 @@ footer {
   .title {
     font-size: 61px;
   }
-  
+
   .sub-title {
     font-size: 37px;
     margin-top: 9px;
@@ -525,11 +559,206 @@ footer {
     top: 355px;
     right: 15%;
   }
+
+  .summary, .tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
+    padding: 0 15%;
+  }
+
+  .other-projects, .more-thoughts, .skills {
+    padding-bottom: 75px;
+  }
+
+  .summary-text {
+    padding: 91px 0;
+  }
+
+  .summary-line {
+    width: 75px;
+    height: 4px;
+    margin-bottom: 6px;
+  }
+
+  .summary-dot {
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-right: 8px;
+  }
+
+  .section-title {
+    padding: 3px 11px;
+    font-size: 35px;
+    margin: 97px 0 54px 0;
+  }
+
+  .section-title-mobile {
+    display: none;
+  }
+  
+  .section-title-dashboard {
+    display: initial;
+    background: #A63889;
+    padding: 3px 11px;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    width: fit-content;
+    align-self: center;
+    margin: 97px 0 54px 0;
+  }
+  
+
+  .section-text {
+    margin-bottom: 90px;
+  }
+
+  .project-link, .other-project-link, .thought-link, .more-thought-link {
+    max-width: 522px;
+  }
+
+  .project-icon {
+    align-self: auto;
+    height: 309px;
+    width: 522px;
+  }
+
+  .-proj1 {
+    background-image: url('./assets/project-image-522.png');
+  }
+  
+  .-proj2 {
+    background-image: url('./assets/project-image-522.png');
+  }
+
+  .project-transparency {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-description, .thought-description {
+    margin: 43px 0 8px 0;
+  }
+
+  .project-tags {
+    margin-bottom: 47px;
+  }
+
+  .project-tag {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 18px;
+    margin-right: 7px;
+  }
+
+  .thought-icon {
+    height: 309px;
+    width: 522px;
+  }
+
+  .-th1 {
+    background-image: url('./assets/thought-image-1-303.png');
+  }
+  
+  .-th2 {
+    background-image: url('./assets/thought-image-2-522.png');
+  }
+
+  .thought-title {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .thought-resume {
+    font-size: 21px;
+    line-height: 37px;
+  }
+
+  .more-thought-description {
+    margin: 15px 0 10px 0;
+    font-size: 21px;
+  }
+  
+  .section-subtitle-bold {
+    font-size: 21px;
+    line-height: 35px;
+  }
+
+  .skills {
+    align-items: center;
+  }
+
+  .skills-container {
+    grid-template-columns: 261px 261px;
+  }
+
+  .skills p {
+    font-size: 21px;
+    line-height: 35px;
+  }
+
+  .more-links {
+    margin-bottom: 87px;
+  }
+
+  .more-link {
+    width: 105px;
+    height: 105px;
+  }
+
+  .more-icon1 {
+    width: 34px;
+    height: 34px;
+    padding-top: 1px;
+  }
+
+  .more-icon2 {
+    width: 40px;
+    height: 41px;
+    padding-top: 6px;
+  }
+
+  .more-icon3 {
+    width: 41px;
+    height: 41px;
+    padding-top: 3px;
+  }
+
+  .more-name {
+    font-size: 18px;
+    margin-top: 26px;
+  }
+
+  footer {
+    padding: 99px 0;
+  }
+
+  .footer-title {
+    font-size: 30px;
+    margin-bottom: 27px;
+  }
+
+  .footer-text-bold, .footer-text {
+    font-size: 21px;
+  }
+  
+  .footer-attribution {
+    font-size: 13px;
+    margin-top: 15px;
+  }
 }
 
 /* MEDIA QUERIES FOR DESKTOP */
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
+  p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
   .top {
     background-image: url('./assets/umbrellas-desktop.jpg');
     height: 656px;
@@ -556,32 +785,32 @@ footer {
     height: 30px;
     padding-top: 4px;
   }
-  
+
   .icon2 {
     width: 35px;
     height: 38px;
     padding-top: 12px;
   }
-  
+
   .icon3 {
     width: 39px;
     height: 39px;
     padding-top: 6px;
   }
-  
+
   .top-text {
     margin: 0 20%;
   }
-  
+
   .name {
     width: 456px;
     margin-bottom: 5px;
   }
-  
+
   .name-portfolio {
     font-size: 28px;
   }
-  
+
   .name-name {
     font-size: 28px;
   }
@@ -589,7 +818,7 @@ footer {
   .title {
     font-size: 82px;
   }
-  
+
   .sub-title {
     font-size: 50px;
     margin-top: 9px;
@@ -610,5 +839,167 @@ footer {
     position: absolute;
     top: 355px;
     right: 20%;
+  }
+
+  .summary, .tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
+    padding: 0 20%;
+  }
+
+  .other-projects, .more-thoughts, .skills {
+    padding-bottom: 75px;
+  }
+
+  .summary-text {
+    padding: 124px 0;
+  }
+
+  .summary-line {
+    width: 90px;
+    height: 4px;
+    margin-bottom: 8px;
+  }
+
+  .summary-dot {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  .section-title, .section-title-dashboard {
+    padding: 3px 12px;
+    font-size: 48px;
+    margin: 136px 0 72px 0;
+  }
+
+  .section-text {
+    margin-bottom: 121px;
+  }
+
+  .projects-container, .thoughts-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .project-link, .thought-link {
+    margin: 0 22px;
+  }
+
+  .project-description, .thought-description {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .project-name {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .project-tags {
+    margin-bottom: 0;
+  }
+
+  .section-subtitle {
+    font-size: 38px;
+    margin-bottom: 37px;
+    margin-top: 90px;
+  }
+
+  .other-projects-container, .more-thoughts-container {
+    width: 1088px;
+  }
+
+  .other-project-link, .more-thought-link {
+    max-width: 1088px;
+  }
+
+  .thought-title {
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  .thought-resume {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .more-thought-description {
+    margin: 15px 0 15px 0;
+    font-size: 25px;
+  }
+
+  .skills, .more {
+    align-items: center;
+  }
+
+  .skills-container {
+    grid-template-columns: 363px 363px 363px;
+  }
+
+  .section-subtitle-bold {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .-more {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .skills p {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .more-links {
+    grid-template-columns: 363px 363px 363px;
+    margin-bottom: 103px;
+  }
+
+  .more-link {
+    width: 154px;
+    height: 154px;
+  }
+
+  .more-icon1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .more-icon2 {
+    width: 57px;
+    height: 61px;
+    padding-top: 6px;
+  }
+
+  .more-icon3 {
+    width: 60px;
+    height: 60px;
+    padding-top: 3px;
+  }
+
+  .more-name {
+    font-size: 25px;
+    margin-top: 38px;
+  }
+
+  footer {
+    padding: 135px 0;
+  }
+
+  .footer-title {
+    font-size: 38px;
+    margin-bottom: 34px;
+  }
+
+  .footer-text-bold, .footer-text {
+    font-size: 30px;
+  }
+
+  .footer-attribution {
+    font-size: 16px;
+    margin-top: 30px;
   }
 }
