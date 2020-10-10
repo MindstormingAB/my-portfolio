@@ -1,21 +1,21 @@
 @font-face {
-  font-family: roboto;
+  font-family: Roboto;
   src: url(./assets/Roboto-Regular.ttf);
 }
 
 @font-face {
-  font-family: roboto;
+  font-family: Roboto;
   src: url(./assets/Roboto-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: montserrat;
+  font-family: Montserrat;
   src: url(./assets/Montserrat-Regular.ttf);
 }
 
 @font-face {
-  font-family: montserrat;
+  font-family: Montserrat;
   src: url(./assets/Montserrat-Bold.ttf);
   font-weight: bold;
 }
@@ -23,6 +23,7 @@
 body {
   margin: 0;
   color: #ffffff;
+  width: 100%;
 }
 
 h1, h2, h3 {
@@ -33,7 +34,7 @@ h1, h2, h3 {
 p {
   margin: 0;
   font-weight: normal;
-  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
   line-height: 29px;
   color: #25282c;
@@ -42,7 +43,7 @@ p {
 .skills p {
   margin: 0;
   font-weight: normal;
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 29px;
   color: #25282c;
@@ -105,7 +106,7 @@ p {
 }
 
 .name {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   width: 206px;
   display: flex;
   justify-content: space-between;
@@ -122,13 +123,13 @@ p {
 }
 
 .title {
-  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
 
 .sub-title {
-  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
   font-weight: bold;
   margin-top: 5px;
@@ -138,6 +139,8 @@ p {
   border-radius: 50%;
   border: 3px solid #ffffff;
   position: absolute;
+  width: 156px;
+  height: 156px;
   top: 359px;
   right: 10%;
 }
@@ -152,15 +155,17 @@ p {
 
 .summary, .featured-projects, .other-projects, .skills {
   background-color: #F2EAE4;
-  /* padding: 58px 10%; */
   padding: 0 10%;
 }
 
 .tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
-  /* padding: 58px 10%; */
   padding: 0 10%;
   display: flex;
   flex-direction: column;
+}
+
+.other-projects, .more-thoughts, .skills {
+  padding: 0 10% 75px 10%;
 }
 
 .summary-text {
@@ -189,7 +194,7 @@ p {
 .section-title {
   background: #A63889;
   padding: 3px 10px;
-  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
   font-weight: bold;
   width: fit-content;
@@ -200,7 +205,7 @@ p {
 .section-subtitle {
   color: #A63889;
   padding: 3px 10px;
-  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 21px;
   font-weight: bold;
   width: fit-content;
@@ -212,7 +217,7 @@ p {
 .section-subtitle-bold {
   color: #A63889;
   /* padding: 3px 10px; */
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 29px;
   font-weight: bold;
@@ -260,17 +265,17 @@ p {
 
 .project-description, .thought-description {
   margin: 25px 0 15px 0;
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .project-name {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #A63889;
 }
 
 .project-arrows {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #A63889;
   text-decoration: underline;
@@ -278,15 +283,15 @@ p {
 
 .project-tags {
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 15px;
 }
 
 .project-tag {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 9px;
   line-height: 10px;
   background: #F4a7af;
-  padding: 3px 8px;
+  padding: 4px 11px;
   margin-right: 3px;
 }
 
@@ -300,40 +305,61 @@ p {
 }
 
 .thought-title {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 21px;
   line-height: 32px;
   font-weight: bold;
 }
 
 .thought-date {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: #A63889;
   font-weight: normal;
 }
 
 .thought-resume {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 32px;
 }
 
 .more-thought-description {
-  margin: 15px 0;
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  margin: 15px 0 5px 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 29px;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .skill {
   text-align: center;
   padding: 15px 0;
+}
+
+.-code {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.-upcoming {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.-toolbox {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.-more {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .more-links {
@@ -384,7 +410,7 @@ footer {
 }
 
 .footer-title {
-  font-family: montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
@@ -392,7 +418,7 @@ footer {
 }
 
 .footer-text-bold {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
@@ -400,14 +426,14 @@ footer {
 }
 
 .footer-text {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 17px;
   text-align: center;
   color: #ffffff;
 }
 
 .footer-attribution {
-  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 10px;
   text-align: center;
   color: #ffffff;
