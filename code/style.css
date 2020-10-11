@@ -144,17 +144,17 @@ p {
   display: none;
 }
 
-.summary, .tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
+.summary, .tech, .featured-projects, .thoughts, .skills, .more {
   padding: 0 10%;
   display: flex;
   flex-direction: column;
 }
 
-.summary, .featured-projects, .other-projects, .skills {
+section:nth-child(even) {
   background-color: #F2EAE4;
 }
 
-.other-projects, .more-thoughts, .skills {
+.other-projects-container, .more-thoughts-container, .skills {
   padding-bottom: 75px;
 }
 
@@ -212,7 +212,7 @@ p {
   margin-bottom: 58px;
 }
 
-.projects-container, .other-projects, .thoughts-container, .more-thoughts {
+.projects-container, .other-projects-container, .thoughts-container, .more-thoughts-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,11 +234,19 @@ p {
 }
 
 .-proj1 {
-  background-image: url('./assets/project-image-303.png');
+  background-image: url('./assets/weather-app-303.png');
 }
 
 .-proj2 {
-  background-image: url('./assets/project-image-303.png');
+  background-image: url('./assets/cluedo-303.png');
+}
+
+.-proj3 {
+  background-image: url('./assets/pizza-bot-303.png');
+}
+
+.-proj4 {
+  background-image: url('./assets/dog-rescue-303.png');
 }
 
 .project-transparency {
@@ -568,11 +576,11 @@ footer {
     right: 15%;
   }
 
-  .summary, .tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
+  .summary, .tech, .featured-projects, .thoughts, .skills, .more {
     padding: 0 15%;
   }
 
-  .other-projects, .more-thoughts, .skills {
+  .other-projects-container, .more-thoughts-container, .skills {
     padding-bottom: 75px;
   }
 
@@ -631,11 +639,19 @@ footer {
   }
 
   .-proj1 {
-    background-image: url('./assets/project-image-522.png');
+    background-image: url('./assets/weather-app-522.png');
   }
   
   .-proj2 {
-    background-image: url('./assets/project-image-522.png');
+    background-image: url('./assets/cluedo-522.png');
+  }
+  
+  .-proj3 {
+    background-image: url('./assets/pizza-bot-522.png');
+  }
+  
+  .-proj4 {
+    background-image: url('./assets/dog-rescue-522.png');
   }
 
   .project-transparency {
@@ -855,11 +871,12 @@ footer {
     right: 20%;
   }
 
-  .summary, .tech, .featured-projects, .other-projects, .thoughts, .more-thoughts, .skills, .more {
+  .summary, .tech, .featured-projects, .thoughts, .skills, .more {
     padding: 0 20%;
+    align-items: center;
   }
 
-  .other-projects, .more-thoughts, .skills {
+  .other-projects-container, .more-thoughts-container, .skills {
     padding-bottom: 75px;
   }
 
@@ -895,6 +912,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    width: 1132px;
   }
 
   .project-link, .thought-link {
@@ -912,7 +930,7 @@ footer {
   }
 
   .project-tags {
-    margin-bottom: 0;
+    margin-bottom: 52px;
   }
 
   .section-subtitle {
@@ -923,6 +941,7 @@ footer {
 
   .other-projects-container, .more-thoughts-container {
     width: 1088px;
+    align-self: center;
   }
 
   .other-project-link, .more-thought-link {
