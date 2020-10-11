@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sandrine Elander's portfolio</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,17 +17,18 @@
       <div class="links">
         <div class="link">
           <a href="https://www.linkedin.com/in/sandrine-elander-10498b4/"><img src="./assets/linkedin.svg"
-              alt="LinkedIn" class="icon1"></a>
+              alt="link to Sandrine's LinkedIn account" class="icon1"></a>
         </div>
         <div class="link">
-          <a href="https://github.com/MindstormingAB/"><img src="./assets/github.svg" alt="Github" class="icon2"></a>
+          <a href="https://github.com/MindstormingAB/"><img src="./assets/github.svg"
+              alt="link to Sandrine's Github account" class="icon2"></a>
         </div>
         <div class="link">
           <a href="https://stackoverflow.com/users/14114672/sandrine"><img src="./assets/stackoverflow.svg"
-              alt="StackOverflow" class="icon3"></a>
+              alt="link to Sandrine's StackOverflow account" class="icon3"></a>
         </div>
       </div>
-      <div class="top-text">
+      <div class="top-text" tabindex="0">
         <div class="name">
           <h3 class="name-portfolio">PORTFOLIO:</h3>
           <h3 class="name-name">SANDRINE ELANDER</h3>
@@ -35,15 +37,15 @@
         <h1 class="title">manager</h1>
         <h2 class="sub-title">with coding skills</h2>
       </div>
-      <img src="./assets/sandrine-162.jpg" alt="Profile picture" class="profile-mobile">
-      <img src="./assets/sandrine-243.jpg" alt="Profile picture" class="profile-tablet">
-      <img src="./assets/sandrine-324.jpg" alt="Profile picture" class="profile-desktop">
+      <img tabindex="0" src="./assets/sandrine-162.jpg" alt="Sandrine's profile picture" class="profile-mobile">
+      <img tabindex="0" src="./assets/sandrine-243.jpg" alt="Sandrine's profile picture" class="profile-tablet">
+      <img tabindex="0" src="./assets/sandrine-324.jpg" alt="Sandrine's profile picture" class="profile-desktop">
     </div>
   </section>
 
   <!-- Summary section  -->
   <section class="summary">
-    <p class="summary-text">
+    <p class="summary-text" tabindex="0">
       <span class="summary-line"></span>
       <span class="summary-dot"></span>
       Hello! I’m a strategic and creative senior art director/digital designer with frontend developer skills and
@@ -54,50 +56,51 @@
 
   <!-- Tech section  -->
   <section class="tech">
-    <h1 class="section-title">TECH</h1>
-    <p class="section-text">HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web
-      Accessibly, API:s,
-      mob-programming, pair-programming, Github.</p>
+    <h2 class="section-title" tabindex="0">TECH</h2>
+    <p class="section-text" tabindex="0">HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks,
+      Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
   </section>
 
   <!-- Featured projects -->
   <section class="featured-projects">
-    <h1 class="section-title">FEATURED PROJECTS</h1>
+    <h2 class="section-title" tabindex="0">FEATURED PROJECTS</h2>
     <div class="projects-container">
-      <a class="project-link" href="#">
+      <a class="project-link" href="#" tabindex="-1">
         <div class="project-icon -proj1">
           <div class="project-transparency">
-            <p class="project-title">SUNNY SIDE-UP</p>
+            <p class="project-title" tabindex="0">SUNNY SIDE-UP</p>
           </div>
         </div>
-        <p class="project-description">
-          <span class="project-name">WEATHER APP.</span>
-          Web app build in Javascript using open weather API
-          <span class="project-arrows">>></span>
+        <p class="project-description" tabindex="0" aria-labelledby="proj1-name" aria-describedby="proj1-desc">
+          <span class="project-name" id="proj1-name">WEATHER APP.</span>
+          <span id="proj1-desc">
+            Web app build in Javascript using open weather API
+          </span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
         <div class="project-tags">
-          <p class="project-tag">HTML5</p>
-          <p class="project-tag">CSS3</p>
-          <p class="project-tag">SASS</p>
-          <p class="project-tag">Javascript ES6</p>
+          <p class="project-tag" tabindex="0">HTML5</p>
+          <p class="project-tag" tabindex="0">CSS3</p>
+          <p class="project-tag" tabindex="0">SASS</p>
+          <p class="project-tag" tabindex="0">Javascript ES6</p>
         </div>
       </a>
-      <a class="project-link" href="#">
+      <a class="project-link" href="#" tabindex="-1">
         <div class="project-icon -proj2">
           <div class="project-transparency">
-            <p class="project-title">SUNNY SIDE-UP</p>
+            <p class="project-title" tabindex="0">SUNNY SIDE-UP</p>
           </div>
         </div>
-        <p class="project-description">
-          <span class="project-name">WEATHER APP.</span>
-          Web app build in Javascript using open weather API
-          <span class="project-arrows">>></span>
+        <p class="project-description" tabindex="0" aria-labelledby="proj2-name" aria-describedby="proj2-desc">
+          <span class="project-name" id="proj2-name">WEATHER APP.</span>
+          <span id="proj2-desc">Web app build in Javascript using open weather API</span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
         <div class="project-tags">
-          <p class="project-tag">HTML5</p>
-          <p class="project-tag">CSS3</p>
-          <p class="project-tag">SASS</p>
-          <p class="project-tag">Javascript ES6</p>
+          <p class="project-tag" tabindex="0">HTML5</p>
+          <p class="project-tag" tabindex="0">CSS3</p>
+          <p class="project-tag" tabindex="0">SASS</p>
+          <p class="project-tag" tabindex="0">Javascript ES6</p>
         </div>
       </a>
     </div>
@@ -105,45 +108,45 @@
 
   <!-- Other projects -->
   <section class="other-projects">
-    <h1 class="section-subtitle">OTHER PROJECTS</h1>
+    <h3 class="section-subtitle" tabindex="0">OTHER PROJECTS</h3>
     <div class="other-projects-container">
-      <a class="other-project-link" href="#">
+      <a class="other-project-link" href="#" tabindex="0" aria-labelledby="proj3-name">
         <p class="project-description">
-          <span class="project-name">WEATHER APP.</span>
-          Web app build in Javascript using open weather API
-          <span class="project-arrows">>></span>
+          <span class="project-name" id="proj3-name">WEATHER APP.</span>
+          <span tabindex="0">Web app build in Javascript using open weather API</span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
         <div class="project-tags">
-          <p class="project-tag">HTML5</p>
-          <p class="project-tag">CSS3</p>
-          <p class="project-tag">SASS</p>
-          <p class="project-tag">Javascript ES6</p>
+          <p class="project-tag" tabindex="0">HTML5</p>
+          <p class="project-tag" tabindex="0">CSS3</p>
+          <p class="project-tag" tabindex="0">SASS</p>
+          <p class="project-tag" tabindex="0">Javascript ES6</p>
         </div>
       </a>
-      <a class="other-project-link" href="#">
+      <a class="other-project-link" href="#" tabindex="0" aria-labelledby="proj4-name">
         <p class="project-description">
-          <span class="project-name">WEATHER APP.</span>
-          Web app build in Javascript using open weather API
-          <span class="project-arrows">>></span>
+          <span class="project-name" id="proj4-name">WEATHER APP.</span>
+          <span tabindex="0">Web app build in Javascript using open weather API</span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
         <div class="project-tags">
-          <p class="project-tag">HTML5</p>
-          <p class="project-tag">CSS3</p>
-          <p class="project-tag">SASS</p>
-          <p class="project-tag">Javascript ES6</p>
+          <p class="project-tag" tabindex="0">HTML5</p>
+          <p class="project-tag" tabindex="0">CSS3</p>
+          <p class="project-tag" tabindex="0">SASS</p>
+          <p class="project-tag" tabindex="0">Javascript ES6</p>
         </div>
       </a>
-      <a class="other-project-link" href="#">
+      <a class="other-project-link" href="#" tabindex="0" aria-labelledby="proj5-name">
         <p class="project-description">
-          <span class="project-name">WEATHER APP.</span>
-          Web app build in Javascript using open weather API
-          <span class="project-arrows">>></span>
+          <span class="project-name" id="proj5-name">WEATHER APP.</span>
+          <span tabindex="0">Web app build in Javascript using open weather API</span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
         <div class="project-tags">
-          <p class="project-tag">HTML5</p>
-          <p class="project-tag">CSS3</p>
-          <p class="project-tag">SASS</p>
-          <p class="project-tag">Javascript ES6</p>
+          <p class="project-tag" tabindex="0">HTML5</p>
+          <p class="project-tag" tabindex="0">CSS3</p>
+          <p class="project-tag" tabindex="0">SASS</p>
+          <p class="project-tag" tabindex="0">Javascript ES6</p>
         </div>
       </a>
     </div>
@@ -151,17 +154,17 @@
 
   <!-- My thoughts -->
   <section class="thoughts">
-    <h1 class="section-title-mobile">MY THOUGHTS</h1>
-    <h1 class="section-title-dashboard">MY THOUGHTS ABOUT CODE</h1>
+    <h2 class="section-title-mobile" tabindex="0">MY THOUGHTS</h2>
+    <h2 class="section-title-dashboard" tabindex="0">MY THOUGHTS ABOUT CODE</h2>
     <div class="thoughts-container">
-      <a class="thought-link" href="#">
+      <a class="thought-link" href="#" tabindex="-1">
         <div class="thought-icon -th1"></div>
         <div class="thought-description">
-          <span class="thought-date">DEC 2019</span>
-          <p class="thought-title">
+          <span class="thought-date" tabindex="0">DEC 2019</span>
+          <p class="thought-title" tabindex="0">
             How to stop being scared: Learning to love code
           </p>
-          <p class="thought-resume">
+          <p class="thought-resume" tabindex="0">
             Writing code is less about “just working”. Instead, it’s much more about creativity. It’s similar to
             creative
             writing in that the author architecting a story must use an assortment of tools and components (i.e.,
@@ -171,14 +174,14 @@
           <span class="project-arrows">>></span>
         </div>
       </a>
-      <a class="thought-link" href="#">
+      <a class="thought-link" href="#" tabindex="-1">
         <div class="thought-icon -th2"></div>
         <div class="thought-description">
-          <span class="thought-date">JAN 2020</span>
-          <p class="thought-title">
+          <span class="thought-date" tabindex="0">JAN 2020</span>
+          <p class="thought-title" tabindex="0">
             Come up with a great title
           </p>
-          <p class="thought-resume">
+          <p class="thought-resume" tabindex="0">
             Use the intro from your text or post to give a quick summary of your reflection here. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam.
@@ -191,34 +194,42 @@
 
   <!-- More thoughts -->
   <section class="more-thoughts">
-    <h1 class="section-subtitle">MORE THOUGHTS</h1>
+    <h3 class="section-subtitle" tabindex="0">MORE THOUGHTS</h3>
     <div class="more-thoughts-container">
-      <a class="more-thought-link" href="#">
+      <a class="more-thought-link" href="#" tabindex="-1">
         <p class="more-thought-description">
-          <span class="thought-date">SEP 2019</span>
-          5 Apps that will make coding easier.
-          <span class="project-arrows">>></span>
+          <span class="thought-date" tabindex="0">SEP 2019</span>
+          <span tabindex="0">
+            5 Apps that will make coding easier.
+          </span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
       </a>
-      <a class="more-thought-link" href="#">
+      <a class="more-thought-link" href="#" tabindex="-1">
         <p class="more-thought-description">
-          <span class="thought-date">SEP 2019</span>
-          5 Apps that will make coding easier.
-          <span class="project-arrows">>></span>
+          <span class="thought-date" tabindex="0">SEP 2019</span>
+          <span tabindex="0">
+            5 Apps that will make coding easier.
+          </span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
       </a>
-      <a class="more-thought-link" href="#">
+      <a class="more-thought-link" href="#" tabindex="-1">
         <p class="more-thought-description">
-          <span class="thought-date">SEP 2019</span>
-          5 Apps that will make coding easier.
-          <span class="project-arrows">>></span>
+          <span class="thought-date" tabindex="0">SEP 2019</span>
+          <span tabindex="0">
+            5 Apps that will make coding easier.
+          </span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
       </a>
-      <a class="more-thought-link" href="#">
+      <a class="more-thought-link" href="#" tabindex="-1">
         <p class="more-thought-description">
-          <span class="thought-date">SEP 2019</span>
-          5 Apps that will make coding easier.
-          <span class="project-arrows">>></span>
+          <span class="thought-date" tabindex="0">SEP 2019</span>
+          <span tabindex="0">
+            5 Apps that will make coding easier.
+          </span>
+          <span class="project-arrows" aria-hidden="true">>></span>
         </p>
       </a>
     </div>
@@ -226,60 +237,68 @@
 
   <!-- My skills -->
   <section class="skills">
-    <h1 class="section-title">SKILLS</h1>
+    <h2 class="section-title" tabindex="0">SKILLS</h2>
     <div class="skills-container">
       <div class="skill -code">
-        <h2 class="section-subtitle-bold">CODE</h2>
-        <p>HTML5</p>
-        <p>CSS3</p>
-        <p>Javascript ES6</p>
-        <p>React</p>
-        <p>SASS</p>
-        <p>GitHub</p>
-        <p>Node.js</p>
+        <h3 class="section-subtitle-bold" tabindex="0">CODE</h3>
+        <ul>
+          <li tabindex="0">HTML5</li>
+          <li tabindex="0">CSS3</li>
+          <li tabindex="0">Javascript ES6</li>
+          <li tabindex="0">React</li>
+          <li tabindex="0">SASS</li>
+          <li tabindex="0">GitHub</li>
+          <li tabindex="0">Node.js</li>
+        </ul>
       </div>
       <div class="skill -upcoming">
-        <h2 class="section-subtitle-bold">UPCOMING</h2>
-        <p>Redux</p>
+        <h3 class="section-subtitle-bold" tabindex="0">UPCOMING</h3>
+        <ul>
+          <li tabindex="0">Redux</li>
+        </ul>
       </div>
       <div class="skill -toolbox">
-        <h2 class="section-subtitle-bold">TOOLBOX</h2>
-        <p>Atom</p>
-        <p>Postman</p>
-        <p>Adobe Photoshop</p>
-        <p>Adobe Illustrator</p>
-        <p>Microsoft Excel</p>
-        <p>Keynote</p>
-        <p>Slack</p>
+        <h3 class="section-subtitle-bold" tabindex="0">TOOLBOX</h3>
+        <ul>
+          <li tabindex="0">Atome</li>
+          <li tabindex="0">Postman</li>
+          <li tabindex="0">Adobe Photoshop</li>
+          <li tabindex="0">Adobe Illustrator</li>
+          <li tabindex="0">Microsoft Excel</li>
+          <li tabindex="0">Keynote</li>
+          <li tabindex="0">Slack</li>
+        </ul>
       </div>
       <div class="skill -more">
-        <h2 class="section-subtitle-bold">MORE</h2>
-        <p>Design lead</p>
-        <p>Branding</p>
-        <p>Strategy</p>
-        <p>Process design</p>
-        <p>Concept development</p>
-        <p>Agile methodology</p>
-        <p>Hyper Island Toolbox</p>
+        <h3 class="section-subtitle-bold" tabindex="0">MORE</h3>
+        <ul>
+          <li tabindex="0">Design lead</li>
+          <li tabindex="0">Branding</li>
+          <li tabindex="0">Strategy</li>
+          <li tabindex="0">Process design</li>
+          <li tabindex="0">Concept development</li>
+          <li tabindex="0">Agile methodology</li>
+          <li tabindex="0">Hyper Island Toolbox</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- More -->
   <section class="more">
-    <h1 class="section-title">FOR MORE</h1>
+    <h2 class="section-title" tabindex="0">FOR MORE</h2>
     <div class="more-links">
       <div class="more-link">
         <a href="https://www.linkedin.com/in/sandrine-elander-10498b4/"><img src="./assets/linkedin-red.svg"
-            alt="LinkedIn" class="more-icon1"></a>
+            alt="link to Sandrine's LinkedIn account" class="more-icon1"></a>
       </div>
       <div class="more-link">
-        <a href="https://github.com/MindstormingAB/"><img src="./assets/github-red.svg" alt="Github"
-            class="more-icon2"></a>
+        <a href="https://github.com/MindstormingAB/"><img src="./assets/github-red.svg"
+            alt="link to Sandrine's Github account" class="more-icon2"></a>
       </div>
       <div class="more-link">
         <a href="https://stackoverflow.com/users/14114672/sandrine"><img src="./assets/stackoverflow-red.svg"
-            alt="StackOverflow" class="more-icon3"></a>
+            alt="link to Sandrine's StackOverflow account" class="more-icon3"></a>
       </div>
       <p class="more-name">LINKEDIN</p>
       <p class="more-name">GITHUB</p>
@@ -288,11 +307,11 @@
   </section>
 
   <footer>
-    <h1 class="footer-title">CONTACT</h1>
-    <p class="footer-text-bold">Sandrine Elander</p>
-    <p class="footer-text">+46 70 576 04 49</p>
-    <p class="footer-text">s.elander@mindstorming.se</p>
-    <p class="footer-attribution">Photo by <a class="footer-link"
+    <h4 class="footer-title" tabindex="0">CONTACT</h4>
+    <p class="footer-text-bold" tabindex="0">Sandrine Elander</p>
+    <a class="footer-text" href="tel:+46705760449">+46 70 576 04 49</a>
+    <a class="footer-text" href="mailto:s.elander@mindstorming.se">s.elander@mindstorming.se</a>
+    <p class="footer-attribution" tabindex="0">Photo by <a class="footer-link"
         href="https://unsplash.com/@danielmingookkim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniel
         Mingook Kim</a> on <a class="footer-link"
         href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>

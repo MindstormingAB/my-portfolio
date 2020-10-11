@@ -26,7 +26,7 @@ body {
   width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: 0;
   font-weight: normal;
 }
@@ -218,11 +218,11 @@ p {
   align-items: center;
 }
 
-.project-link, .other-project-link, .thought-link {
+.project-link, .other-project-link, .thought-link, .more-thought-link {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  max-width: 303px;
+  width: 303px;
 }
 
 .project-icon {
@@ -381,7 +381,12 @@ p {
   grid-row: 2 / 3;
 }
 
-.skills p {
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li {
   margin: 0;
   font-weight: normal;
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -435,6 +440,8 @@ p {
 
 footer {
   background: #455473;
+  display: flex;
+  flex-direction: column;
   padding: 63px 0;
 }
 
@@ -459,6 +466,7 @@ footer {
   font-size: 17px;
   text-align: center;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-attribution {
@@ -613,7 +621,7 @@ footer {
   }
 
   .project-link, .other-project-link, .thought-link, .more-thought-link {
-    max-width: 522px;
+    width: 522px;
   }
 
   .project-icon {
@@ -652,6 +660,12 @@ footer {
     line-height: 19px;
     padding: 5px 18px;
     margin-right: 7px;
+  }
+
+  .section-subtitle {
+    font-size: 30px;
+    margin-bottom: 28px;
+    margin-top: 66px;
   }
 
   .thought-icon {
@@ -695,7 +709,7 @@ footer {
     grid-template-columns: 261px 261px;
   }
 
-  .skills p {
+  .li {
     font-size: 21px;
     line-height: 35px;
   }
@@ -912,7 +926,7 @@ footer {
   }
 
   .other-project-link, .more-thought-link {
-    max-width: 1088px;
+    width: 1088px;
   }
 
   .thought-title {
@@ -948,7 +962,7 @@ footer {
     grid-row: 1 / 2;
   }
 
-  .skills p {
+  .li {
     font-size: 25px;
     line-height: 41px;
   }
