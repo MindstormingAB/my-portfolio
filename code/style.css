@@ -386,7 +386,7 @@ ul {
   padding: 0;
 }
 
-.li {
+li {
   margin: 0;
   font-weight: normal;
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -709,7 +709,7 @@ footer {
     grid-template-columns: 261px 261px;
   }
 
-  .li {
+  li {
     font-size: 21px;
     line-height: 35px;
   }
@@ -962,7 +962,7 @@ footer {
     grid-row: 1 / 2;
   }
 
-  .li {
+  li {
     font-size: 25px;
     line-height: 41px;
   }
