@@ -308,6 +308,10 @@ section:nth-child(even) {
   margin-top: 42px;
 }
 
+.thought-link:not(:last-child) {
+  margin-bottom: 42px;
+}
+
 .thought-icon {
   align-self: center;
   background-size: cover;
@@ -316,11 +320,11 @@ section:nth-child(even) {
 }
 
 .-th1 {
-  background-image: url('./assets/thought-image-1-303.png');
+  background-image: url('./assets/thought-image1-small.jpg');
 }
 
 .-th2 {
-  background-image: url('./assets/thought-image-2-303.png');
+  background-image: url('./assets/thought-image2-small.png');
 }
 
 .thought-title {
@@ -684,17 +688,21 @@ footer {
     margin-top: 66px;
   }
 
+  .thought-link:not(:last-child) {
+    margin-bottom: 47px;
+  }
+
   .thought-icon {
-    height: 309px;
+    height: 354px;
     width: 522px;
   }
 
   .-th1 {
-    background-image: url('./assets/thought-image-1-303.png');
+    background-image: url('./assets/thought-image1-medium.jpg');
   }
   
   .-th2 {
-    background-image: url('./assets/thought-image-2-522.png');
+    background-image: url('./assets/thought-image2-medium.png');
   }
 
   .thought-title {
@@ -946,6 +954,10 @@ footer {
 
   .other-project-link, .more-thought-link {
     width: 1088px;
+  }
+
+  .thought-link:not(:last-child) {
+    margin-bottom: 52px;
   }
 
   .thought-title {
