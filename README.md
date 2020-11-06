@@ -18,6 +18,6 @@ It works well for people using screen readers and keyboard navigation.
 
 ## View it live
 
-You can take a look at the result on https://smhi-killer.netlify.app/.
+You can take a look at the result on https://sandrineelander.netlify.app/.
 You are welcome to leave some comments about my code in this repository.
 Enjoy!
