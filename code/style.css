@@ -40,6 +40,11 @@ p {
   color: #25282c;
 }
 
+.emphasized-text {
+  color:  #A63889;
+  font-weight: bold;
+}
+
 .top {
   background-image: url('./assets/umbrellas-mobile.jpg');
   background-size: cover;
